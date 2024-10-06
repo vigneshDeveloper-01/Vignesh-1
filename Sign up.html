@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="S.vignesh" content="Sign up">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="icon" href="star.png">
+    <link rel="stylesheet" href="Sign up.css">
+</head>
+<body>
+
+    <div class="homelander">
+        <form action="#" class="form">
+            <h1 class="Sign">Sign Up</h1>
+
+        <div class="home">
+            <input type="text" class="star" required>
+            <label for="" class="lander">Enter Username</label>
+        </div>
+
+        <div class="home">
+            <input type="text" class="star" required>
+            <label for="" class="lander">Email or Phone</label>
+        </div>
+
+        <div class="home">
+            <input type="password" class="star" required id="password">
+            <label for="" class="lander">Create Password</label>
+        </div>
+        
+        <div class="home">
+            <input type="password" class="star" required >
+            <label for="" class="lander">Confirm Password</label>
+        </div>
+
+        <div class="home">
+            <label class="Sheepstealer">
+                <input type="checkbox" class="method" id="show">
+                Show Password</label>
+        </div>
+
+        <div class="home">
+            
+            <button class="Seven"><a href="#">Signup</a></button>
+            or
+            <button class="Seven"><a href="login.html">Login</a></button>
+        </div>
+
+        </form>
+
+
+    </div>
+    
+<script>
+    const password = document.querySelector('#password');
+    const checkbox = document.querySelector('#show');
+
+    checkbox.addEventListener('click', function () {
+        const type = password.getAttribute("type") == "password" ? "text" : "password";
+
+        password.setAttribute("type", type);
+    });
+
+</script>
+
+</body>
+</html>
